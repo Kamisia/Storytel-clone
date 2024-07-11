@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.24rem;
+  overscroll-behavior-y: none;
+  background-color: rgb(255, 251, 250);
+  -webkit-font-smoothing: antialiased;
+}
