@@ -6,20 +6,26 @@ interface HeaderProps {}
 const Wrapper = styled.header`
   width: 100%;
   min-height: 6.4rem;
-  display: flex;
-  flex-direction: row;
-  z-index: 1000;
+  display: block;
   position: fixed;
-  align-items: start;
-  padding: 1rem;
-  background-color: rgb(16, 16, 16);
-  justify-content: space-between;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    width: 100%;
+    height: 6.4rem;
+    padding-inline: 1.6rem;
+    background-color: rgb(16, 16, 16);
+  }
 `;
 const Header: React.FC<HeaderProps> = () => {
   return (
     <Wrapper>
-      <Logo />
-      <Navbar />
+      <div className="container">
+        <Logo />
+        <Navbar />
+      </div>
     </Wrapper>
   );
 };

@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 62.5%;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -11,4 +17,10 @@ body {
   overscroll-behavior-y: none;
   background-color: rgb(255, 251, 250);
   -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  display: block;
+}
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
 }

@@ -4,10 +4,11 @@ interface MenuButtonProps {
   onClick: () => void;
 }
 const Wrapper = styled.button`
+  height: fit-content;
   display: flex;
-  align-items: center;
-  gap: 3rem;
-  background-color: transparent;
+  align-items: flex-start;
+  background: none;
+  padding: 0;
   border: none;
   cursor: pointer;
   svg {

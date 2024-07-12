@@ -8,25 +8,27 @@ const Wrapper = styled.a`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  gap: 8px;
+  height: 40px;
   cursor: pointer;
   min-width: 12ch;
   border-width: 0px;
-  border-radius: 25px;
+  border-radius: 1000px;
   border-color: transparent;
   text-align: center;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-family: "Poppins";
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.03px;
-  line-height: 0.8rem;
-  min-height: 2rem;
-  padding: 1rem;
+  line-height: 1.6rem;
+  min-height: 4rem;
+  padding: 1.2rem 1.6rem;
   color: rgb(16, 16, 16);
   background-color: rgb(255, 255, 255);
+  vertical-align: baseline;
 `;
 
 const MenuButton: React.FC<MenuButtonProps> = ({ text }) => {

@@ -9,24 +9,17 @@ interface NavbarProps {
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: end;
-  margin-left: auto;
-  margin-right: 0;
-
-  div {
-    display: flex;
-    gap: 2rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 `;
 const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
   return (
     <Wrapper>
-      <div>
-        <LinkButton text={"Wypróbuj"} />
-        <MenuButton onClick={onMenuClick} />
-      </div>
+      <LinkButton text={"Wypróbuj"} />
+      <MenuButton onClick={onMenuClick} />
     </Wrapper>
   );
 };
