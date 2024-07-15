@@ -1,20 +1,20 @@
 import React from "react";
-import NavLink from "../../atoms/NavLink/NavLink.tsx";
+import Link from "../../atoms/Link/Link.tsx";
 import styled from "styled-components";
 import { NavLinkData, NavLinkData2 } from "../../../data.tsx";
 
-interface NavLinksProps {
+interface LinksProps {
   data: NavLinkData[] | NavLinkData2[];
 }
 const Wrapper = styled.ul``;
-const NavLinks: React.FC<NavLinksProps> = ({ data }) => {
+const Links: React.FC<LinksProps> = ({ data }) => {
   return (
     <Wrapper>
       {data.map((link, index) => (
-        <NavLink key={index} text={link.text} href={link.href} />
+        <Link key={index} text={link.text} href={link.href} />
       ))}
     </Wrapper>
   );
 };
 
-export default NavLinks;
+export default Links;

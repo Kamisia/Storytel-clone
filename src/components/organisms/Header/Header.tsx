@@ -29,11 +29,12 @@ const Header: React.FC<HeaderProps> = () => {
         <Navigation />
       </div>
       <div>
+        {/* DoropBox.tsx pamiętaj o zmianie className na open by był widoczny  */}
         {/*Tutaj div zwierający wysuwaną nawigacje
-        <div>
-          <nav>
-            <ul>
-              <li><a></a></li>
+        <div> //DropContainer.tsx
+          <nav>//Navigation.tsx
+            <ul>//NavLinks.tsx
+              <li><a></a></li>//NavLink.tsx
               <li><a></a></li>
               <li><a></a></li>
               <li><a></a></li>
@@ -43,29 +44,29 @@ const Header: React.FC<HeaderProps> = () => {
               <li><a></a></li>
             </ul>
           </nav>
-          <div>
-            <section>
+          <div>//SearchBox.tsx
+            <section>//SearchSection.tsx lub SearchContainer.tsx
               <div>
-                <div>
-                  <div>
+                <div>// InputSearch.tsx
+                  <div>//icon.tsx
                     <svg></svg>
                   </div>
-                  <input>
+                  <input> //input.tsx
                 </div>
                 <div>
-                  <div></div>
+                  <div></div>//pusty div nic się nie dzieje w wersji mobilnej
                   <div>
-                    <button>
+                    <button>//button.tsx
                       <svg></svg>
                     </button>
                   </div>
                 </div>
               </div>
             </section>
-            <section>
-              <h4></h4>
-              <ul>
-                <li><a></a></li>
+            <section> //PopularTag.tsx
+              <h4></h4>//Title.tsx
+              <ul>NavLinks.tsx
+                <li><a></a></li>NavLink.tsx
                 <li><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
@@ -73,9 +74,9 @@ const Header: React.FC<HeaderProps> = () => {
               </ul>
             </section>
             <section>
-              <h4></h4>
-              <ul>
-              <li><a></a></li>
+              <h4></h4>//Title.tsx
+              <ul>//NavLinks.tsx
+              <li><a></a></li>//NavLink.tsx
                 <li><a></a></li>
                 <li><a></a></li>
                 <li><a></a></li>
