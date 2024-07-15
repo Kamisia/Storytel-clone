@@ -1,17 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import styled from "styled-components";
-interface NavLinkProps {
+interface LinkProps {
   text: string;
   href?: string;
+  children?: ReactNode;
 }
 const Wrapper = styled.li``;
-const NavLink: React.FC<NavLinkProps> = ({ text, href = "/" }) => {
+const Link: React.FC<LinkProps> = ({ text, href = "/", children }) => {
   return (
     <Wrapper>
-      <a href={`${href}`}> {text}</a>
+      <a href={`${href}`}> {children || text}</a>
     </Wrapper>
   );
 };
 
-export default NavLink;
+export default Link;
