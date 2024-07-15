@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../molecules/Logo/Logo.tsx";
-import Navbar from "../Navbar/Navbar.tsx";
+import Navbar from "../../organisms/Navbar/Navbar.tsx";
 import styled from "styled-components";
 import DropBox from "../DropBox/DropBox.tsx";
 interface HeaderProps {}
